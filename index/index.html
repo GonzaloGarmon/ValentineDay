@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="titulo">
+        <h1 id="h1"> ¿ QUERES SER MI SAN VALENTIN ?</h1>
+    </div>
+    <h1 id="hiddenh1">Siii vamos a doña el 16 de febrero</h1>
+    <div id="botones">
+        <button id="boton1" class="btn1" onclick="remove()"> Si!! Quiero!! </button>
+        <button id="boton2" class="btn2"> No (me pondria triste) </button>
+        <script src="script.js"> </script>
+    </div>
+
+    <script>
+        var h1 = document.getElementById('h1');
+        var hiddenh1 = document.getElementById('hiddenh1');
+        
+        
+        function remove(){
+            document.getElementById('botones').style.display = 'none';
+            h1.style.display = 'none';
+            hiddenh1.style.display = 'block';
+
+        }
+    </script>
+</body>
+</html>
